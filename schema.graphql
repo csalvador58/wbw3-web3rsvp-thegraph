@@ -1,6 +1,6 @@
 type Event @entity {
   id: ID!
-  eventID: Bytes!
+  eventId: Bytes!
   name: String
   description: String
   link: String
