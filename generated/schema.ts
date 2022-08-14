@@ -42,13 +42,13 @@ export class Event extends Entity {
     this.set("id", Value.fromString(value));
   }
 
-  get eventID(): Bytes {
-    let value = this.get("eventID");
+  get eventId(): Bytes {
+    let value = this.get("eventId");
     return value!.toBytes();
   }
 
-  set eventID(value: Bytes) {
-    this.set("eventID", Value.fromBytes(value));
+  set eventId(value: Bytes) {
+    this.set("eventId", Value.fromBytes(value));
   }
 
   get name(): string | null {

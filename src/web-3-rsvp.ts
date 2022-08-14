@@ -12,7 +12,7 @@ export function handleNewEventCreated(event: NewEventCreated): void {
   let newEvent = Event.load(event.params.eventId.toHex());
   if (newEvent == null) {
     newEvent = new Event(event.params.eventId.toHex());
-    newEvent.eventID = event.params.eventId;
+    newEvent.eventId = event.params.eventId;
     newEvent.eventOwner = event.params.creatorAddress;
     newEvent.eventTimestamp = event.params.eventTimestamp;
     newEvent.maxCapacity = event.params.maxCapacity;
